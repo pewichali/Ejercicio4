@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiaVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+
+    <TextView
+        android:id="@+id/PrimerNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primer Nombre: "
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/SegundoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Segundo Nombre: "
+        app:layout_constraintTop_toBottomOf="@+id/PrimerNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/PrimerApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primer Apellido: "
+        app:layout_constraintTop_toBottomOf="@+id/SegundoNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/SegundoApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Segundo Apellido: "
+        app:layout_constraintTop_toBottomOf="@+id/PrimerApellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/Sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo: "
+        app:layout_constraintTop_toBottomOf="@+id/SegundoApellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/Telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono: "
+        app:layout_constraintTop_toBottomOf="@+id/Sexo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/EditPrimerNombre"
+        android:layout_width="90sp"
+        android:layout_height="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PrimerNombre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditSegundoNombre"
+        android:layout_width="90sp"
+        android:layout_height="14dp"
+        app:layout_constraintStart_toEndOf="@+id/SegundoNombre"
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
